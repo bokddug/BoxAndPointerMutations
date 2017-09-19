@@ -3,8 +3,8 @@ This module lets you practice IMPLEMENTING
 functions that MUTATE their arguments.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and JaeJung Hyun.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
 
@@ -134,17 +134,22 @@ def swap_colors(circle, rectangle):
       :type rectangle: rg.Rectangle
     """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #          Tests have been written for you (above).
     #
     ####################################################################
     # HINT: To SWAP two things (let's call them A and B),
-    #   use the SWAP pattern, like this:
+    #   use the SWAP pattern, like        return swap_colors() this:
     #      temp = A
     #      A = B
     #      B = temp
     ####################################################################
     # ------------------------------------------------------------------
+
+    change =circle.fill_color
+    circle.fill_color = rectangle.fill_color
+    rectangle.fill_color =change
+
 
 
 # ----------------------------------------------------------------------
